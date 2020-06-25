@@ -1,0 +1,144 @@
+// 6em = 6em;
+$primary = #2FFFAC;
+
+.pageloader {
+    opacity: .9;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 2em;
+    background: #fff;
+    z-index: 8;
+    transition: -webkit-transform 0.236s ease-out;
+    transition: transform 0.236s ease-out;
+    transition: transform 0.236s ease-out, -webkit-transform 0.236s ease-out;
+    transition-delay: 0.236s;
+    transform: translateY(100%);
+    will-change: transform;
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: calc(6em + calc((6em / 2))) 0 0 0;
+        font-size: 0.875em;
+        letter-spacing: 0.5em;
+        line-height: 1.5em;
+        color: $grey-light;
+        white-space: nowrap;
+    }
+
+    .sitios-logo {
+        top: 45%;
+        left: 50%;
+        position: absolute;
+        display: block;
+        box-sizing: border-box;
+        width: 6em;
+        height: 6em;
+        margin-left: calc((6em / -2));
+        background: none;
+
+        figure {
+            position: absolute;
+            display: block;
+            box-sizing: border-box;
+            width: 6em;
+            height: 6em;
+            background: $primary;
+            z-index: 9998;
+            border-radius: 100%;
+            clip-path: inset(calc(50% - calc((6em / 8))) 0);
+        }
+
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            float: left;
+            position: absolute;
+            display: block;
+            box-sizing: border-box;
+            z-index: 9999;
+            width: 6em;
+            height: 6em;
+            border-radius: 100%;
+            background: transparent;
+            border: calc((6em / 4)) solid $primary;
+            clip-path: polygon(0% 0%, 80% 0%, 50% 50%, 0% 50%);
+            transform: rotate(0deg);
+        }
+
+        &::after {
+            content: '';
+            top: 0;
+            left: 0;
+            float: left;
+            position: absolute;
+            display: block;
+            box-sizing: border-box;
+            z-index: 9999;
+            width: 6em;
+            height: 6em;
+            border-radius: 100%;
+            background: transparent;
+            border: calc((6em / 4)) solid $primary;
+            clip-path: polygon(0% 0%, 80% 0%, 50% 50%, 0% 50%);
+            transform: rotate(180deg);
+        }
+    }
+
+    &.is-active {
+        transform: scale(1.5);
+
+        .sitios-logo {
+            animation: sitios-logo 2s infinite 0s linear forwards;
+
+            &::before, &::after {
+                animation: sitios-logo-before 1s infinite 0s linear alternate forwards;
+            }
+        }
+    }
+}
+
+@keyframes sitios-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes sitios-logo-before {
+    0% {
+        clip-path: polygon(0% 0%, 80% 0%, 50% 50%, 0% 50%);
+        opacity: 1;
+    }
+
+    25% {
+        clip-path: polygon(0% 0%, 48% 0%, 50% 50%, 0% 50%);
+    }
+
+    50% {
+        clip-path: polygon(0% 0%, 16% 0%, 50% 50%, 0% 50%);
+    }
+
+    75% {
+        clip-path: polygon(0% 0%, 0% 16%, 50% 50%, 0% 50%);
+    }
+
+    100% {
+        clip-path: polygon(0% 0%, 0% 50%, 50% 50%, 0% 50%);
+        opacity: 0;
+    }
+}

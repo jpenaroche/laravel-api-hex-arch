@@ -1,0 +1,54 @@
+// Import Vuetify styling
+@require '~vuetify/src/stylus/main.styl'
+@require './user.styl'
+
+
+// Custom style rules here
+.my_h1
+  color: red
+
+.v-label
+  font-size: 14px;
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+.text-center{
+  text-align:center;
+}
+
+.v-table tbody i:hover {
+  color: springgreen;
+  font-size:2rem!important;
+  transition:font-size .05s linear;
+}
+
+.disabled{
+  color: darkgray!important;
+  background: #e0e0e0;
+  opacity : .8;
+  box-shadow :none!important;
+  border:solid 1px lightgray;
+}
+
+//table a {
+//  text-decoration: none;
+//}
+
+a{
+  text-decoration: none;
+}
+
+.v-label{
+  text-transform:capitalize;
+}
+
+a.link
+  i:hover{
+    color: springgreen;
+    font-size:2rem!important;
+    transition:font-size .05s linear;
+  }

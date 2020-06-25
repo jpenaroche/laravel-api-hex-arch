@@ -1,0 +1,48 @@
+{
+  "name": "NuxtSaw3",
+  "version": "1.0.0",
+  "description": "My badass Nuxt.js project",
+  "author": "SitiosComUY",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env ENV=dev API_URL=http://localhost:8000/api HOST=localhost PORT=3000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env API_URL=http://localhost:8000/api nuxt generate",
+    "dev-debug": "cross-env ENV=dev API_URL=http://localhost:8000/api HOST=localhost PORT=3000 node_modules/.bin/nuxt --inspect"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "@nuxtjs/auth": "^4.5.3",
+    "@nuxtjs/axios": "^5.4.1",
+    "@vuex-orm/core": "^0.31.7",
+    "@vuex-orm/plugin-axios": "^0.5.0",
+    "@vuex-orm/plugin-change-flags": "^1.2.0",
+    "@vuex-orm/plugin-search": "^0.23.4",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "install": "^0.12.2",
+    "jimp": "^0.6.0",
+    "laravel-echo": "^1.5.3",
+    "npm": "^6.9.0",
+    "nuxt": "^2.4.5",
+    "socket.io-client": "^2.2.0",
+    "vee-validate": "^2.2.0",
+    "vue-debounce": "^1.1.0",
+    "vue-i18n": "^8.9.0",
+    "vue-moment": "^4.0.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-recaptcha": "^1.1.1",
+    "vue2-dropzone": "^3.5.6",
+    "vue2-google-maps": "^0.10.6",
+    "vuetify": "^1.5.6",
+    "vuetify-loader": "^1.2.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/proxy": "^1.3.3",
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}

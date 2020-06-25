@@ -1,0 +1,12 @@
+{
+  "/js/app.js": "/js/app.js",
+  "/admin_assets/css/sad.css": "/admin_assets/css/sad.css",
+  "/css/app.css": "/css/app.css",
+  "/admin_assets/js/login.js": "/admin_assets/js/login.js",
+  "/admin_assets/js/wo2-layout.js": "/admin_assets/js/wo2-layout.js",
+  "/admin_assets/js/wo2-app.js": "/admin_assets/js/wo2-app.js",
+  "/page_assets/css/sad-page.css": "/page_assets/css/sad-page.css",
+  "/page_assets/js/sad-page.js": "/page_assets/js/sad-page.js",
+  "/admin_assets/js/vue-app.js": "/admin_assets/js/vue-app.js",
+  "/page_assets/js/vue-app.js": "/page_assets/js/vue-app.js"
+}
