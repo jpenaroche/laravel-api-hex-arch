@@ -24,7 +24,7 @@
     "install": "^0.12.2",
     "jimp": "^0.6.0",
     "laravel-echo": "^1.5.3",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "nuxt": "^2.4.5",
     "socket.io-client": "^2.2.0",
     "vee-validate": "^2.2.0",
