@@ -30,7 +30,7 @@
     "vee-validate": "^2.2.0",
     "vue-debounce": "^1.1.0",
     "vue-i18n": "^8.9.0",
-    "vue-moment": "^4.0.0",
+    "vue-moment": "^4.1.0",
     "vue-quill-editor": "^3.0.6",
     "vue-recaptcha": "^1.1.1",
     "vue2-dropzone": "^3.5.6",
