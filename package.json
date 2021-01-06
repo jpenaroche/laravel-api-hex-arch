@@ -19,7 +19,7 @@
     "@vuex-orm/plugin-axios": "^0.5.0",
     "@vuex-orm/plugin-change-flags": "^1.2.0",
     "@vuex-orm/plugin-search": "^0.23.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "install": "^0.12.2",
     "jimp": "^0.6.0",
